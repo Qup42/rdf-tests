@@ -95,7 +95,7 @@ Body
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#put__initial_state' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>PUT $GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>PUT /$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 Content-Type: text/turtle; charset=utf-8
 
@@ -131,7 +131,7 @@ Content-Type: text/turtle; charset=utf-8
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#get_of_put__initial_state' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>GET $GRAPHSTORE$?graph=$GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>GET /$GRAPHSTORE$?graph=$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 Accept: text/turtle
 </code></pre>
@@ -167,7 +167,7 @@ Content-Length: ...
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#put__graph_already_in_store' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>PUT $GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>PUT /$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 Content-Type: text/turtle; charset=utf-8
 
@@ -204,7 +204,7 @@ Content-Type: text/turtle; charset=utf-8
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#get_of_put__graph_already_in_store' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>GET $GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>GET /$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 Accept: text/turtle
 </code></pre>
@@ -243,7 +243,7 @@ Content-Length: ...
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#put__default_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>PUT $GRAPHSTORE$?default HTTP/1.1
+            <pre><code>PUT /$GRAPHSTORE$?default HTTP/1.1
 Host: $HOST$
 Content-Type: text/turtle; charset=utf-8
 
@@ -280,7 +280,7 @@ Content-Type: text/turtle; charset=utf-8
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#get_of_put__default_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>GET $GRAPHSTORE$?default HTTP/1.1
+            <pre><code>GET /$GRAPHSTORE$?default HTTP/1.1
 Host: $HOST$
 Accept: text/turtle
 </code></pre>
@@ -319,7 +319,7 @@ Content-Length: ...
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#put__mismatched_payload' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>PUT $GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>PUT /$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 Content-Type: text/turtle; charset=utf-8
 
@@ -356,7 +356,7 @@ Content-Type: text/turtle; charset=utf-8
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#delete__existing_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>DELETE $GRAPHSTORE$/person/2.ttl HTTP/1.1
+            <pre><code>DELETE /$GRAPHSTORE$/person/2.ttl HTTP/1.1
 Host: $HOST$
 </code></pre>
             <h4 id="response">Response</h4>
@@ -383,7 +383,7 @@ Host: $HOST$
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#get_of_delete__existing_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>GET $GRAPHSTORE$/person/2.ttl HTTP/1.1
+            <pre><code>GET /$GRAPHSTORE$/person/2.ttl HTTP/1.1
 Host: $HOST$
 </code></pre>
             <h4 id="response">Response</h4>
@@ -410,7 +410,7 @@ Host: $HOST$
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#delete__nonexistent_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>DELETE $GRAPHSTORE$/person/2.ttl HTTP/1.1
+            <pre><code>DELETE /$GRAPHSTORE$/person/2.ttl HTTP/1.1
 Host: $HOST$
 </code></pre>
             <h4 id="response">Response</h4>
@@ -457,7 +457,7 @@ Host: $HOST$
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#get_of_post__existing_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>POST $GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>POST /$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 Content-Type: text/turtle; charset=utf-8
 
@@ -489,7 +489,7 @@ Content-Type: text/turtle; charset=utf-8
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#post__multipart_formdata' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>POST $GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>POST /$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 Content-Type: multipart/form-data; boundary=a6fe4cd636164618814be9f8d3d1a0de
 
@@ -533,7 +533,7 @@ Content-Type: text/turtle; charset=utf-8
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#get_of_post__multipart_formdata' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>GET $GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>GET /$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 </code></pre>
             <h4 id="response">Response</h4>
@@ -574,7 +574,7 @@ Content-Length: ...
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#post__create__new_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>POST $GRAPHSTORE$ HTTP/1.1
+            <pre><code>POST /$GRAPHSTORE$ HTTP/1.1
 Host: $HOST$
 Content-Type: text/turtle; charset=utf-8
 
@@ -690,7 +690,7 @@ Content-Length: ...
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#head_on_an_existing_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>HEAD $GRAPHSTORE$/person/1.ttl HTTP/1.1
+            <pre><code>HEAD /$GRAPHSTORE$/person/1.ttl HTTP/1.1
 Host: $HOST$
 </code></pre>
             <h4 id="response">Response</h4>
@@ -719,7 +719,7 @@ Content-Length: ...
         <dd inlist='true' property='mf:entry' resource='http://www.w3.org/2009/sparql/docs/tests/data-sparql11/http-rdf-update/manifest#head_on_a_nonexisting_graph' typeof='mf:GraphStoreProtocolTest'>
           <div property='rdfs:comment'>
             <h4 id="request">Request</h4>
-            <pre><code>HEAD $GRAPHSTORE$/person/4.ttl HTTP/1.1
+            <pre><code>HEAD /$GRAPHSTORE$/person/4.ttl HTTP/1.1
 Host: $HOST$
 </code></pre>
             <h4 id="response">Response</h4>
